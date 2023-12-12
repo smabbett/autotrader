@@ -1,0 +1,81 @@
+{
+  "version": "1.0",
+  "resources": [
+    {
+      "resource": "Connection",
+      "metadata": {
+        "ConnectionId": {
+          "isExpression": true
+        },
+        "ConnectionName": {
+          "isExpression": true
+        },
+        "Connector": {
+          "defaultValue": "uipath-google-sheets",
+          "isExpression": true
+        },
+        "UseConnectionService": {
+          "defaultValue": "False",
+          "isExpression": false
+        }
+      }
+    },
+    {
+      "resource": "Connection",
+      "metadata": {
+        "ConnectionId": {
+          "isExpression": true
+        },
+        "ConnectionName": {
+          "isExpression": true
+        },
+        "Connector": {
+          "defaultValue": "uipath-google-gmail",
+          "isExpression": true
+        },
+        "UseConnectionService": {
+          "defaultValue": "False",
+          "isExpression": false
+        }
+      }
+    },
+    {
+      "resource": "Connection",
+      "metadata": {
+        "ConnectionId": {
+          "isExpression": true
+        },
+        "ConnectionName": {
+          "isExpression": true
+        },
+        "Connector": {
+          "defaultValue": "uipath-google-sheets",
+          "isExpression": true
+        },
+        "UseConnectionService": {
+          "defaultValue": "False",
+          "isExpression": false
+        }
+      }
+    },
+    {
+      "resource": "Connection",
+      "metadata": {
+        "ConnectionId": {
+          "isExpression": true
+        },
+        "ConnectionName": {
+          "isExpression": true
+        },
+        "Connector": {
+          "defaultValue": "uipath-google-gmail",
+          "isExpression": true
+        },
+        "UseConnectionService": {
+          "defaultValue": "False",
+          "isExpression": false
+        }
+      }
+    }
+  ]
+}

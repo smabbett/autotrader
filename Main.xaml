@@ -1,0 +1,239 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="755,2718" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:uasb="clr-namespace:UiPath.Activities.System.Binding;assembly=UiPath.System.Activities" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:uga="clr-namespace:UiPath.GSuite.Activities;assembly=UiPath.GSuite.Activities" xmlns:ugas="clr-namespace:UiPath.GSuite.Activities.Sheets;assembly=UiPath.GSuite.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:um="clr-namespace:UiPath.Mail;assembly=UiPath.Mail.Activities" xmlns:umab="clr-namespace:UiPath.Mail.Activities.Business;assembly=UiPath.Mail.Activities" xmlns:umabh="clr-namespace:UiPath.Mail.Activities.Business.HtmlEditor;assembly=UiPath.Mail.Activities" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="58">
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>System.Xml.Serialization</x:String>
+      <x:String>UiPath.Activities.System.Binding</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Mail</x:String>
+      <x:String>UiPath.Presentations</x:String>
+      <x:String>UiPath.Word</x:String>
+      <x:String>GlobalVariablesNamespace</x:String>
+      <x:String>GlobalConstantsNamespace</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="48">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Private.Xml</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.GSuite.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Presentations</AssemblyReference>
+      <AssemblyReference>UiPath.Presentations.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Word.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <sap:WorkflowViewStateService.ViewState>
+    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+    </scg:Dictionary>
+  </sap:WorkflowViewStateService.ViewState>
+  <ueab:SequenceX DisplayName="Single Excel Process Scope" sap:VirtualizedContainerService.HintSize="628,2653" sap2010:WorkflowViewState.IdRef="SequenceX_1">
+    <ueab:SequenceX.Variables>
+      <Variable x:TypeArguments="ue:IWorkbookQuickHandle" Default="[new WorkbookQuickHandle(workbookPath:=&quot;Project_Notebook.xlsx&quot;,visible:=True,autoSave:=False,createNew:=True,readOnly:=False,isWorkspace:=True)]" Name="Notes" />
+      <Variable x:TypeArguments="uasb:BindingsRepository" Default="[new UiPath.Activities.System.Binding.BindingsRepository()]" Name="Saved" />
+    </ueab:SequenceX.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Browser Chrome: Used Cars Online | Touchless Delivery Available" sap:VirtualizedContainerService.HintSize="586,925" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" ScopeGuid="cd5a97f1-8be4-409c-826b-90905314897b" Version="V1">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="376,707" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Used Cars'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="334,219" sap2010:WorkflowViewState.IdRef="NTypeInto_1" ScopeIdentifier="cd5a97f1-8be4-409c-826b-90905314897b" Version="V1">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.carvana.com/cars" DesignTimeRectangle="101, 436, 1747, 43" ElementType="InputBox" FriendlyName="'INPUT'" FullSelectorArgument="&lt;webctrl tag='INPUT' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='INPUT' type='text' aaname='' /&gt;" Guid="e07fbd2e-a070-471b-aff3-34a69ccf7066" ImageBase64="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" InformativeScreenshot="879d426a50976efdd79695c39580e671.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Used Cars Online | Touchless Delivery Available' /&gt;" SearchSteps="FuzzySelector, Image">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="47, 360, 97, 31" FriendlyName="'Used Cars'" FullSelectorArgument="&lt;webctrl tag='H1' /&gt;" FuzzySelectorArgument="&lt;webctrl tag='H1' type='' aaname='Used Cars' check:text='Used Cars' /&gt;" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAGUAAAAjCAYAAACNfcS+AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAJmSURBVGhD7ZXBkYMwDEW3jDSSXvacBlJBeshQQDrIJbfUkEMuaYIqvAiwLQtJmMGZ1UFvRhewZel/GX6CYw43xSBuikHcFIO4KQZxUwziphjETTGIm2IQN8UgbopBClNe3W84HIc4P0M/P8t8whXeDXF6lG/7x2Xal+IS7iRByi3E9T2tW+bKQc+tow/38/ZcUIe2RqvzcLyF17wOU6MTsNsUTezadRA1pkzBN8LyvjH7cUi5Yq+8uMB6neXeWp2Afab0z3Can0VRgSmPUFT3mZ/wpGZpDeisKmMKQ4i4MVc3nMHlQXul2yLWiXRKvW7QCdhnSipenqjIblNGmIZZ0Do2jwb53An7tToX7zboBDS7KWtitzFlIDWo3JaaNRLolsTA0x2pMiWasEEnoPk/RbrudB0OvGfVFOFTgMln1U1mJt8SqEnTQ66Tv821OgG7TQHyZOSggjUzRakjovehkAyfb5gyAFzPZSwHokYnoIkpESo8PjC92/v5+uJNWfaP/i+kbt0U/VxNJ6AwRRdk3ZQJdH1RnmamfOufIpkt5FrWKRvIw+sEFKbkAhin6dVW4Ca1jSmoETWP3LAEnV420JlsnRuHgdMJKE0Rm5Gez9NRsXa3KWiSq5pOAkGQIYu5Ui2oZjVyHr5O6bbU6wQQUwaKZmgQMTasXZvE+MlIzYpRN4Ujan1TwLn5TOYLMZIFjJ9ucXi427JF04GlKSPI8RjihDNrmeZamKL/y2S4s3OupeAc1DjRFKyHdItS8EMgmOL8J26KQdwUg7gpBnFTDOKmGMRNMYibYhA3xSBuikHcFHOE8AcBqYrFawxu1wAAAABJRU5ErkJggg==" SearchSteps="FuzzySelector, Image" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+              <uix:NTypeInto.Text>
+                <InArgument x:TypeArguments="x:String">
+                  <ui:AskWhenRun x:TypeArguments="x:String" />
+                </InArgument>
+              </uix:NTypeInto.Text>
+              <sap:WorkflowViewStateService.ViewState>
+                <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                  <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                </scg:Dictionary>
+              </sap:WorkflowViewStateService.ViewState>
+            </uix:NTypeInto>
+            <uix:NClick ClickType="Single" DisplayName="Click 'GO'" sap:VirtualizedContainerService.HintSize="334,158" sap2010:WorkflowViewState.IdRef="NClick_5" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="cd5a97f1-8be4-409c-826b-90905314897b" Version="V1">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.carvana.com/cars?page=4" DesignTimeRectangle="1759, 426, 80, 65" ElementType="Button" FriendlyName="'GO'" FullSelectorArgument="&lt;webctrl parentid='search-bar-container-wrapper' tag='BUTTON' /&gt;" FuzzySelectorArgument="&lt;webctrl parentid='search-bar-container-wrapper' tag='BUTTON' type='' aaname='GO' check:text='GO' /&gt;" Guid="c4611ee6-208a-4ba4-be48-c6505f77f21b" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAFQAAABFCAYAAADU4cH/AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAALASURBVHhe7ZyxbtNQFIb7JEg8Qmc2xjwCa8eMeQVGxo5ZM6Yr6lAVCZQBqUVlMKoAqxUVbVyC05DUiSE++LY34SY5Tpzwp5aa/0rf5PMP9/P1sa+Hu9Xtx0JwUCiYGaGVk6Y8ef1VtvZOyRyMI+Nq2t+E0GdvztUwycY4cx2OhRrbWoAsxl2pY6F8zFfHuJsRqhWS/FAoGAoFQ6FgKBQMhYKhUDAUCoZCwVAoGAoFQ6FgKBQMhYKhUDAUCoZCwVAoGAoFQ6FgKBRM8UIPm1INBnIZJzIeSSLRIJbGVSiVt76eM2Rkw9u+1E+vZFvLrJlChZa+9CV0XOgjEe/8+1TWlxf+4mx025NXDTe3fgoTWjobSGQnbqT5QSg7djVuN5qyG8T31wc9qezPySbDVPi1lA7NNV+eH7ekfjO0F9PxZyDVB5RajNCjrlza+YoM5cA7U+uefgikfCfKwc2msmrvtZbgS/nC3hAzuh0pzdSshwKE+rLbthNNRxgESk0WbjaR489z+uvehdS6tjStbXhaDZ4ChLbFs9MUiaX+TqvJwsnGaStQaxw+Rf9WafunXgPm4YV+7Elo55hLiouTjVotvWYC5wakvbis1mApVminrddk4WTztYpADmIbWPbmrUixQrVVc+JcH40bK54rVGF/sofWpnuoJnS0kt1s1JUdN6fhbUIPzf2Wd+SNW8Myb/lvUu3Y0sf9lk/J9R2qCU2Z+g7VP9o36jv0nvk7pet0j+4ImXp5caekkm8/bkbUmu5/ObNRtDl7+THaH6N0RPFv8X78kpdH+rb0Dv5tevxQKBgKBUOhYCgUDIWCoVAwFAqGQsFQKBgKBUOhYCgUDIWCoVAwFAqGQsFQKBgKBUOhYGaE8iCs1VEPwuJRbaujHtVm4GGCy5N5mOAIY5uP/2KMI3dljpgRSv4PCgVDoVBi+QuptArOHXRywgAAAABJRU5ErkJggg==" InformativeScreenshot="a5e6b3dc36d1df37f818589a5a5fe3bf.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Used Cars Online | Touchless Delivery Available' /&gt;" SearchSteps="FuzzySelector, Image" />
+              </uix:NClick.Target>
+            </uix:NClick>
+            <uix:NExtractData AppendResults="False" ContinueOnError="True" DataTable="[Saved.Values(Of System.Data.DataTable)(&quot;CarDatabase&quot;)]" DisplayName="Extract Table Data" ExtractDataSettings="&lt;Table xmlns:xsi='http://www.w3.org/2001/XMLSchema-instance' xmlns:xsd='http://www.w3.org/2001/XMLSchema' Type='Structured'&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column1' Name='Price'&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column2' Name='Mileage'&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column4' Name='Year/Make/Model'&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataColumn' ReferenceName='Column5' Name='URL'&gt;&#xA;&#x9;&#x9;&lt;Format xsi:type='TextColumnFormat' /&gt;&#xA;&#x9;&lt;/Column&gt;&#xA;&#x9;&lt;Column xsi:type='DataNextLink' /&gt;&#xA;&lt;/Table&gt;" ExtractMetadata="&lt;extract&gt;&lt;row exact='1'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/row&gt;&lt;column exact='1' name='Column1' attr='text'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column2' attr='text'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;webctrl tag='div' idx='3' /&gt;&lt;webctrl tag='div' idx='2' /&gt;&lt;/column&gt;&lt;column exact='1' name='Column4' attr='alt' name2='Column5' attr2='href'&gt;&lt;webctrl tag='div' /&gt;&lt;webctrl tag='a' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='div' idx='1' /&gt;&lt;webctrl tag='picture' idx='1' /&gt;&lt;webctrl tag='img' idx='1' /&gt;&lt;/column&gt;&lt;/extract&gt;" sap:VirtualizedContainerService.HintSize="334,158" sap2010:WorkflowViewState.IdRef="NExtractData_2" LimitExtractionTo="Rows" MaximumResults="0" ScopeIdentifier="cd5a97f1-8be4-409c-826b-90905314897b" Version="V1">
+              <uix:NExtractData.NextLink>
+                <uix:TargetAnchorable BrowserURL="https://www.carvana.com/cars/mini" DesignTimeRectangle="1605, 598, 133, 84" ElementType="Button" FriendlyName="'Next'" FullSelectorArgument="&lt;webctrl aaname='Next' parentid='pagination' tag='BUTTON' type='button' /&gt;" FuzzySelectorArgument="&lt;webctrl aaname='Next' parentid='pagination' tag='BUTTON' type='button' check:text='Next' /&gt;" Guid="05a8a80e-7b92-483d-8d62-33b11f445334" ImageBase64="iVBORw0KGgoAAAANSUhEUgAAAIkAAABYCAYAAADBRtRDAAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAAFiUAABYlAUlSJPAAAAQoSURBVHhe7d2xThtJGMBxP0KeIJLf4Po0p5RU0T3BSSlTUl6RF0hxRUqkXJMyNKdTRIEuiiKnuUtCkDihJAaEIwd0gAEjYx/wZT52bI93x/mCWMNw/o/0K9idtYv9s7NeJFNpH/cE+BYigakQyezSltx+/kkq86uYMnre9fznmxiJ5M6LjejBmC7aQdjFIBItKHYAplN4RRlEwhKDkPZQiCQ2EdONSGAiEpiIBCYigYlIYCISmIgEJiKBiUhgIhKYiAQmIoGJSGAiEpiIBCYigYlIYCISmIgEJiKBiUhgIhKYiAQmIoGJSGAiEpiIBCYigYlIYCISmNKKZL0rctKVuVpkX2BuX/xwc8N9erw5smN++vyf/9mN7pHMLgSvo/5uS9PvFjmT2uqqPNg69T9/e+xtXfyLgH7b2Je93qn8sLge3X+d0otEhxHK3EE27TKRVBZ2pBZ00mx+Cd6jIU/bfocbnf2W3HXbJxlJywXSHz//1YzOuS5pRqKjdyyPx4TyPZGsrAfbx6h+OJaOny9nPXnq3+/uWje6fdS2LPb8nJ67EhX2X4yGEY6UQkk3Eh1uGfjlz+K8siKpzG+6pevMH+GuGK1dqS7sypsTv8GNeqMROU6VG4nSpSa8ojxc+Tc676qlHYmOyP1CeZE4tQOpDzo5k3o7WFI6bbkfO+Zc+ZGofChP3L1KbN5VSjaSzsnwN1w6o6GUGokz0+if7XCcyuL7+PzMZCJRGsq71rF/8esPJdlIVtYbLoZgKWgfygMfStmRVOa/yB+Dm5Bs7G1vSzU6t29ykahbv39IJpSEI3E/L7gTMdwknYOWzLh53xNJfOTmB2bCj8R6FXkbnzc02UjUjy83/RvI+RIUm3MV0o5Et0VCeVZ2JCP3JX4cHZ4HWZg7MNlIdMnR5yb9cZ2fdtKPRNVashJ84hiOMpabujxq5QvJRn1j3CcbNblI7r3+nEwg6mZEoqKhXD6S6j+d4JlIV55tBs9I9KHeq/hxk4okxeclNycSp7p8JM2RX/pLRqJLWf9Eu5E9E8k9bd3ZGXMDW34kYSB6D5JCIOpGRaI0lD0/57KRzIaP2cNnIrVDqfvN5zexy/XCsWVHkg8kpb/h3LhI1Iybly0J4yMZP/wx+RByz0TuN3N/AAz2ZcqNpP8ALbVAVFqRrAWRrEX2B7JQcpEEx48f2TGPdoNnMNElxUUQvFx9I/8/gLaG+0uI5NePu0kGotKKBEkiEpiIBCYigYlIYCISmIgEJiKBiUhgIhKYiAQmIoGJSGAiEpiIBCYigYlIYCISmIgEJiKBiUhgIhKYiAQmIoGJSGAiEpiIBCYigYlIYCISmAqR3H7+KToR00l7KEQyu3TxL8/H/5f2UIhE3XmR/8IWTCPtIOxiJBKlBbH0TCc97+EVpK8QCZBHJDD05Ct9IAbk1SBi/wAAAABJRU5ErkJggg==" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Used MINI For Sale Online | Carvana' /&gt;" SearchSteps="FuzzySelector, Image" />
+              </uix:NExtractData.NextLink>
+              <uix:NExtractData.Target>
+                <uix:TargetAnchorable BrowserURL="https://www.carvana.com/cars/mini?page=4" DesignTimeRectangle="11, -3065, 1874, 4806" FriendlyName="'Pre-order nowCarvana'" FullSelectorArgument="&lt;webctrl id='results-section' tag='SECTION' /&gt;" Guid="77a17273-d5d2-4713-b2e9-5dad4c222d10" InformativeScreenshot="5c23472f1fb7fab680695c7a584a858c.png" ScopeSelectorArgument="&lt;html app='chrome.exe' title='Used MINI For Sale Online | Carvana' /&gt;" SearchSteps="Selector" />
+              </uix:NExtractData.Target>
+            </uix:NExtractData>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 1920, 1020" BrowserType="Chrome" IconBase64="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" InformativeScreenshot="d21269e305bf538d4d586824630d1fdb.png" Selector="&lt;html app='chrome.exe' title='Used Cars Online | Touchless Delivery Available'/&gt;" Url="https://www.carvana.com/cars" />
+      </uix:NApplicationCard.TargetApp>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </uix:NApplicationCard>
+    <ugas:GoogleSheetsApplicationScope ConnectionAccountName="{x:Null}" ConnectionId="{x:Null}" ContinueOnError="{x:Null}" FileId="{x:Null}" Filename="{x:Null}" ParentFolderId="{x:Null}" ParentFolderPath="{x:Null}" Timeout="{x:Null}" Account="sarah.abbett@gmail.com" Action="UseExisting" DisplayName="Use Google Spreadsheet" sap:VirtualizedContainerService.HintSize="586,1600" sap2010:WorkflowViewState.IdRef="GoogleSheetsApplicationScope_1" Mode="Browse" SpreadsheetId="1KsvgVQolcB2K3TsTq7w3aFIeNXtBacVGBPGR1MBfrhw" SpreadsheetName="Autotrader" UseConnectionService="False" UserEmail="sarah.abbett@gmail.com">
+      <ugas:GoogleSheetsApplicationScope.Body>
+        <ActivityAction x:TypeArguments="ugas:IGoogleSheetTarget">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="ugas:IGoogleSheetTarget" Name="Spreadsheet" />
+          </ActivityAction.Argument>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="552,1312" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uga:WriteRange ContinueOnError="{x:Null}" Request="{x:Null}" Result="{x:Null}" SpreadsheetId="{x:Null}" AuthScopesInvalid="False" DataTable="[Saved.Values(Of System.Data.DataTable)(&quot;CarDatabase&quot;)]" DisplayName="Write Range" GoogleSpreadsheet="[Spreadsheet]" sap:VirtualizedContainerService.HintSize="510,221" sap2010:WorkflowViewState.IdRef="WriteRange_1" IncludeHeaders="True" IsInsideBatchUpdateScope="False" SheetName="Cars" StartingCell="A1" />
+            <uga:DownloadSpreadsheet ContinueOnError="{x:Null}" SpreadsheetId="{x:Null}" AuthScopesInvalid="False" DisplayName="Download Spreadsheet" DownloadAs="Xlsx" DownloadPath="CarsForSale" GoogleSpreadsheet="[Spreadsheet]" sap:VirtualizedContainerService.HintSize="510,237" sap2010:WorkflowViewState.IdRef="DownloadSpreadsheet_1" LocalFilepath="[Saved.Values(Of System.String)(&quot;cars&quot;)]" />
+            <umab:GmailApplicationCard ConnectionAccountName="{x:Null}" ConnectionId="{x:Null}" Account="sarah.abbett@gmail.com" DisplayName="Use Gmail" EmailAddress="sarah.abbett@gmail.com" sap:VirtualizedContainerService.HintSize="510,686" sap2010:WorkflowViewState.IdRef="GmailApplicationCard_2" Timeout="90" UseConnectionService="False">
+              <umab:GmailApplicationCard.Body>
+                <ActivityAction x:TypeArguments="um:IMailQuickHandle">
+                  <ActivityAction.Argument>
+                    <DelegateInArgument x:TypeArguments="um:IMailQuickHandle" Name="Gmail" />
+                  </ActivityAction.Argument>
+                  <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="476,502" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                    <umab:SendMailX Bcc="{x:Null}" Body="{x:Null}" HtmlBodyFromText="{x:Null}" ReplyTo="{x:Null}" Account="[Gmail]" BodyType="Text" Cc="robert.baptist@uipath.com" DisplayName="Send Email" sap:VirtualizedContainerService.HintSize="434,414" sap2010:WorkflowViewState.IdRef="SendMailX_1" Importance="Normal" MaxBodyDocumentSizeMB="2" Sensitivity="Normal" Subject="Car List" To="sarah.abbett@gmail.com" UseDocumentAsBody="False">
+                      <umab:SendMailX.Files>
+                        <scg:List x:TypeArguments="InArgument(x:String)" Capacity="4">
+                          <InArgument x:TypeArguments="x:String">[Saved.Values(Of System.String)("cars")]</InArgument>
+                        </scg:List>
+                      </umab:SendMailX.Files>
+                      <umab:SendMailX.HtmlBodyFromFile>
+                        <umabh:HtmlContentArgument FilePath="{x:Null}">
+                          <umabh:HtmlContentArgument.RuntimeImages>
+                            <scg:Dictionary x:TypeArguments="x:String, InArgument(x:String)" />
+                          </umabh:HtmlContentArgument.RuntimeImages>
+                          <umabh:HtmlContentArgument.ValueMappings>
+                            <scg:List x:TypeArguments="umabh:HtmlValueMappingBase" Capacity="0" />
+                          </umabh:HtmlContentArgument.ValueMappings>
+                        </umabh:HtmlContentArgument>
+                      </umab:SendMailX.HtmlBodyFromFile>
+                    </umab:SendMailX>
+                  </Sequence>
+                </ActivityAction>
+              </umab:GmailApplicationCard.Body>
+              <umab:GmailApplicationCard.ClientId>
+                <InArgument x:TypeArguments="x:String">
+                  <Literal x:TypeArguments="x:String" Value="" />
+                </InArgument>
+              </umab:GmailApplicationCard.ClientId>
+              <umab:GmailApplicationCard.ClientSecret>
+                <InArgument x:TypeArguments="x:String">
+                  <Literal x:TypeArguments="x:String" Value="" />
+                </InArgument>
+              </umab:GmailApplicationCard.ClientSecret>
+            </umab:GmailApplicationCard>
+          </Sequence>
+        </ActivityAction>
+      </ugas:GoogleSheetsApplicationScope.Body>
+      <ugas:GoogleSheetsApplicationScope.CredentialID>
+        <InArgument x:TypeArguments="x:String">
+          <Literal x:TypeArguments="x:String" Value="" />
+        </InArgument>
+      </ugas:GoogleSheetsApplicationScope.CredentialID>
+      <ugas:GoogleSheetsApplicationScope.CredentialSecret>
+        <InArgument x:TypeArguments="x:String">
+          <Literal x:TypeArguments="x:String" Value="" />
+        </InArgument>
+      </ugas:GoogleSheetsApplicationScope.CredentialSecret>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </ugas:GoogleSheetsApplicationScope>
+  </ueab:SequenceX>
+</Activity>
